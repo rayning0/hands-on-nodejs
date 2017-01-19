@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Why JavaScript?</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<body>
+  <button id="mybutton">Click</button>
+</body>
+
+<script type="text/javascript">
+  // plain JS:
+
+  // window.onload = function() {
+  //   console.log('page loaded');
+  //   var clickCount = 0;
+  //   document.getElementById('mybutton').onclick = function() {
+  //     clickCount++;
+  //     alert('Clicked ' + clickCount + ' times.');
+  //   }
+  // };
+
+  // jQuery:
+
+  // $(function() {
+  // $(document).ready(function() {  <- when DOM loaded, not all content
+  // $(window).on('load', function() {   <- when DOM & images/content FULLY loaded
+
+(function() { // <- keep clickCount from being global variable; wrap in closure
+    console.log('page loaded');
+    var clickCount = 0;
+    $('button#mybutton').click(function() {
+      clickCount++;
+      alert('Clicked ' + clickCount + ' times.');
+    });
+})(); // <- last () invokes function immediately after defining it
+  //});
+</script>
+</html>

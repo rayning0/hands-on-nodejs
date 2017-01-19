@@ -1,0 +1,14 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Get weather of random city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raymond Gan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
