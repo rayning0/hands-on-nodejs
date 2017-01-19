@@ -9,6 +9,6 @@
   "author": "Raymond Gan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "*"
   }
 }
